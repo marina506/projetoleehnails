@@ -1,0 +1,83 @@
+/* ===== Estilos gerais ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  width: 100%;
+  background-color: #2F4472;
+  color: #fff;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* ===== Links ===== */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #D3E1FF;
+}
+
+/* ===== Ícone do menu (mobile) ===== */
+.mobile-menu-icon {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #1a1a1a;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+}

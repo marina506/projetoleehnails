@@ -1,0 +1,102 @@
+/* ===== Estilos gerais ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+
+header {
+  width: 100%;
+  background-color: #2F4472;
+  color: #fff;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  width: 70px;   /* largura */
+  height: auto;   /* mantém a proporção */
+  margin-left: -60px;
+  display: block;
+}
+
+
+/* ===== Links ===== */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #D3E1FF;
+}
+
+/* ===== Ícone do menu (mobile) ===== */
+.mobile-menu-icon {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #1a1a1a;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+}
+/* Reset básico */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo do conteúdo principal */
+main {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/*As imagens do banner é pra ficarem passando sozinhas depois de um tempo*/ 
